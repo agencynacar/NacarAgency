@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacar Agency: Tu Socio para el Éxito Profesional en Bigo Live</title>
+    <meta name="description" content="Únete a Nacar Agency y convierte tu pasión por el streaming en ingresos confiables. Agencia especializada en Bigo Live Streaming.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-cta {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .nav-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .hero {
+            background: white;
+            padding: 80px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            color: #2d3748;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+
+        .hero-highlight {
+            color: #667eea;
+        }
+
+        .hero p {
+            font-size: 22px;
+            color: #4a5568;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section {
+            padding: 80px 0;
+            background: white;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .section h2 {
+            font-size: 42px;
+            color: #2d3748;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            color: #4a5568;
+            text-align: center;
+            max-width: 900px;
+            margin: 0 auto 60px;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .benefit-card {
+            background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
+            padding: 35px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .benefit-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .benefit-card h3 {
+            font-size: 24px;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .benefit-card p {
+            color: #4a5568;
+            font-size: 16px;
+        }
+
+        .testimonials {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 0;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .testimonials h2 {
+            color: white;
+        }
+
+        .testimonial-placeholder {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 40px;
+            border-radius: 15px;
+            text-align: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .testimonial-placeholder p {
+            font-size: 18px;
+            color: #4a5568;
+            font-style: italic;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 100px 0;
+            text-align: center;
+            margin: 40px 0;
+            border-radius: 20px;
+        }
+
+        .cta-section h2 {
+            font-size: 48px;
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .cta-section p {
+            font-size: 22px;
+            color: white;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        footer {
+            background: rgba(255, 255, 255, 0.98);
+            padding: 40px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        footer p {
+            color: #4a5568;
+        }
+
+        .keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+        }
+
+        .keyword-tag {
+            background: #f6f8fb;
+            padding: 10px 20px;
+            border-radius: 20px;
+            color: #667eea;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        /* Chatbot Styles */
+        .chatbot-container {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 10000;
+        }
+
+        .chatbot-button {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chatbot-button:hover {
+            transform: scale(1.1);
+        }
+
+        .chatbot-window {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 380px;
+            height: 550px;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .chatbot-window.active {
+            display: flex;
+        }
+
+        .chatbot-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chatbot-header h3 {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        .chatbot-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f6f8fb;
+        }
+
+        .message {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .message-content {
+            padding: 12px 16px;
+            border-radius: 15px;
+            max-width: 80%;
+            word-wrap: break-word;
+        }
+
+        .message.bot .message-content {
+            background: white;
+            color: #2d3748;
+            align-self: flex-start;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .message.user .message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            align-self: flex-end;
+        }
+
+        .chatbot-input-container {
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 10px;
+        }
+
+        .chatbot-input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .chatbot-input:focus {
+            border-color: #667eea;
+        }
+
+        .chatbot-send {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: bold;
+            transition: transform 0.2s ease;
+        }
+
+        .chatbot-send:hover {
+            transform: scale(1.05);
+        }
+
+        .typing-indicator {
+            display: none;
+            padding: 12px 16px;
+            background: white;
+            border-radius: 15px;
+            align-self: flex-start;
+            max-width: 80%;
+        }
+
+        .typing-indicator.active {
+            display: block;
+        }
+
+        .typing-indicator span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #667eea;
+            margin: 0 2px;
+            animation: typing 1.4s infinite;
+        }
+
+        .typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes typing {
+            0%, 60%, 100% {
+                opacity: 0.3;
+                transform: translateY(0);
+            }
+            30% {
+                opacity: 1;
+                transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+
+            .section h2 {
+                font-size: 32px;
+            }
+
+            .cta-section h2 {
+                font-size: 36px;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .chatbot-window {
+                width: calc(100vw - 40px);
+                height: calc(100vh - 140px);
+                right: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">NACAR AGENCY</div>
+                <a href="#aplicar" class="nav-cta">Aplicar Ahora</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Nacar Agency: Tu Socio para el Éxito Profesional en <span class="hero-highlight">Bigo Live Streaming</span></h1>
+            <p>Especialistas exclusivos en transformar tu talento en ingresos confiables a través de la plataforma Bigo Live</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2>Deja de Hacer Stream Gratis. Empieza a Hacer Stream por Dinero.</h2>
+            <p class="section-subtitle">
+                ¿Pasas horas transmitiendo en Bigo Live sin ver resultados económicos reales? Es hora de convertir tu pasión en una profesión. Nacar Agency te ofrece el camino profesional que necesitas para <strong>hacer dinero transmitiendo en línea</strong> y dejar atrás el streaming amateur.
+            </p>
+            <p class="section-subtitle">
+                Como <strong>agencia de streaming de Bigo Live</strong> líder, nos especializamos exclusivamente en la plataforma Bigo Live App, lo que significa que conocemos cada secreto, estrategia y herramienta para maximizar tus ganancias.
+            </p>
+        </div>
+    </section>
+
+    <section class="section" style="background: #f6f8fb;">
+        <div class="container">
+            <h2>La Ventaja Nacar: Experiencia, Soporte y Crecimiento Garantizado en Bigo Live</h2>
+            <p class="section-subtitle">
+                Cuando te unes a Nacar Agency, no solo obtienes una agencia de <strong>gestión de talento Bigo Live</strong>. Obtienes un equipo completo dedicado a tu éxito financiero y profesional.
+            </p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">💰</div>
+                    <h3>Crecimiento Financiero</h3>
+                    <p>Estructuras de <strong>ingreso mínimo garantizado</strong> con bonos e incentivos adicionales. Te enseñamos estrategias probadas para aumentar tus regalos y diamantes, y cómo convertir tus ganancias en dinero real de manera eficiente.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🎓</div>
+                    <h3>Capacitación Profesional</h3>
+                    <p>Entrenamiento personalizado uno a uno con expertos en Bigo Live. Domina rápidamente la aplicación Bigo Live, desarrolla estrategias de contenido ganadoras y <strong>conviértete en un host profesional de Bigo</strong>.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🛠️</div>
+                    <h3>Soporte Administrativo</h3>
+                    <p>Nos encargamos de todas las obligaciones contractuales, configuración técnica y resolución de problemas específicos de la plataforma como verificación de cuentas y pagos. Tú solo enfócate en transmitir.</p>
+                </div>
+
+                <div class="benefit-card">
+                    <div class="benefit-icon">🤝</div>
+                    <h3>Comunidad Exclusiva</h3>
+                    <p>Acceso a una red privada de streamers exitosos de Bigo Live. Comparte estrategias, mantén la motivación y crece junto a profesionales que están alcanzando sus metas de <strong>ingresos por streaming</strong>.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <div class="container">
+            <h2>Nuestras Historias de Éxito</h2>
+            <div class="testimonial-placeholder">
+                <p>"Desde que me uní a Nacar Agency, mis ingresos se han triplicado. El equipo me enseñó todo sobre cómo maximizar mis transmisiones en Bigo Live y ahora esto es mi trabajo de tiempo completo. ¡No podría estar más agradecida!"</p>
+                <p style="margin-top: 20px; font-weight: bold; color: #667eea;">— [Talento Nacar]</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section" id="aplicar">
+        <div class="container">
+            <h2>Únete al Equipo – Aplica Ahora</h2>
+            <p>
+                <strong>¿Listo para convertir tu pasión por el streaming en un ingreso confiable?</strong><br>
+                Aplica hoy para unirte al roster exclusivo de talento Bigo Live de Nacar Agency. El espacio es limitado y solo aceptamos streamers comprometidos y ambiciosos.
+            </p>
+            <div class="cta-buttons">
+                <a href="mailto:reclutamiento@nacaragency.com" class="cta-button">Enviar Aplicación por Email</a>
+                <a href="https://wa.me/1234567890" class="cta-button secondary">Contactar por WhatsApp</a>
+            </div>
+
+            <div class="keywords">
+                <span class="keyword-tag">Reclutamiento Nacar Agency</span>
+                <span class="keyword-tag">Bigo Live Streaming Agency</span>
+                <span class="keyword-tag">Hacer Dinero Transmitiendo Online</span>
+                <span class="keyword-tag">Host Profesional Bigo</span>
+                <span class="keyword-tag">Gestión de Talento Bigo Live</span>
+                <span class="keyword-tag">Ingresos por Streaming</span>
+                <span class="keyword-tag">Aplicación Bigo Live</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Nacar Agency. Todos los derechos reservados.</p>
+            <p style="margin-top: 10px; font-size: 14px;">Especialistas en Gestión de Talento para Bigo Live</p>
+        </div>
+    </footer>
+
+    <!-- Chatbot -->
+   <!-- NACAR CONNECT CHATBOT WIDGET -->
+<div id="nacar-chatbot-widget">
+    <style>
+        #nacar-chatbot-widget * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        #nacar-chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            font-size: 28px;
+            cursor: pointer;
+            box-shadow: 0 4px 20px rgba(102, 126, 234, 0.5);
+            z-index: 9998;
+            transition: transform 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #nacar-chat-button:hover {
+            transform: scale(1.1);
+        }
+
+        #nacar-chat-window {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 380px;
+            max-width: calc(100vw - 40px);
+            height: 550px;
+            max-height: calc(100vh - 140px);
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            display: none;
+            flex-direction: column;
+            overflow: hidden;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        #nacar-chat-window.active {
+            display: flex;
+        }
+
+        #nacar-chat-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #nacar-chat-header h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        #nacar-chat-close {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            line-height: 1;
+        }
+
+        #nacar-chat-messages {
+            flex: 1;
+            overflow-y: auto;
+            padding: 20px;
+            background: #f6f8fb;
+        }
+
+        .nacar-message {
+            margin-bottom: 15px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .nacar-message-content {
+            padding: 12px 16px;
+            border-radius: 15px;
+            max-width: 85%;
+            word-wrap: break-word;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        .nacar-message.bot .nacar-message-content {
+            background: white;
+            color: #2d3748;
+            align-self: flex-start;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .nacar-message.user .nacar-message-content {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            align-self: flex-end;
+        }
+
+        .quick-replies {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 10px;
+        }
+
+        .quick-reply-btn {
+            background: white;
+            border: 2px solid #667eea;
+            color: #667eea;
+            padding: 8px 12px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 13px;
+            transition: all 0.3s ease;
+        }
+
+        .quick-reply-btn:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        #nacar-typing-indicator {
+            display: none;
+            padding: 12px 16px;
+            background: white;
+            border-radius: 15px;
+            align-self: flex-start;
+            max-width: 80px;
+        }
+
+        #nacar-typing-indicator.active {
+            display: block;
+        }
+
+        #nacar-typing-indicator span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #667eea;
+            margin: 0 2px;
+            animation: nacar-typing 1.4s infinite;
+        }
+
+        #nacar-typing-indicator span:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        #nacar-typing-indicator span:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes nacar-typing {
+            0%, 60%, 100% {
+                opacity: 0.3;
+                transform: translateY(0);
+            }
+            30% {
+                opacity: 1;
+                transform: translateY(-5px);
+            }
+        }
+
+        #nacar-chat-input-container {
+            padding: 15px;
+            background: white;
+            border-top: 1px solid #e2e8f0;
+            display: flex;
+            gap: 10px;
+        }
+
+        #nacar-chat-input {
+            flex: 1;
+            padding: 12px;
+            border: 1px solid #e2e8f0;
+            border-radius: 20px;
+            font-size: 14px;
+            outline: none;
+            font-family: inherit;
+        }
+
+        #nacar-chat-input:focus {
+            border-color: #667eea;
+        }
+
+        #nacar-chat-send {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 14px;
+            transition: transform 0.2s ease;
+        }
+
+        #nacar-chat-send:hover {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            #nacar-chat-window {
+                width: calc(100vw - 40px);
+                height: calc(100vh - 140px);
+            }
+        }
+    </style>
+
+    <!-- Chat Button -->
+    <button id="nacar-chat-button">💬</button>
+
+    <!-- Chat Window -->
+    <div id="nacar-chat-window">
+        <div id="nacar-chat-header">
+            <h3>Nacar Connect 🌟</h3>
+            <button id="nacar-chat-close">×</button>
+        </div>
+
+        <div id="nacar-chat-messages">
+            <div class="nacar-message bot">
+                <div class="nacar-message-content">
+                    👋 ¡Hola! Soy Nacar Connect, tu asistente virtual. Estoy aquí para responder tus preguntas sobre Nacar Agency y cómo convertirte en streamer profesional en Bigo Live. ¿En qué puedo ayudarte hoy?
+                </div>
+                <div class="quick-replies">
+                    <button class="quick-reply-btn" data-reply="¿Cómo unirme a la agencia?">¿Cómo unirme?</button>
+                    <button class="quick-reply-btn" data-reply="¿Cuánto puedo ganar?">Pagos</button>
+                    <button class="quick-reply-btn" data-reply="¿Qué necesito para empezar?">Requisitos</button>
+                </div>
+            </div>
+            <div id="nacar-typing-indicator">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <div id="nacar-chat-input-container">
+            <input type="text" id="nacar-chat-input" placeholder="Escribe tu pregunta...">
+            <button id="nacar-chat-send">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        (function() {
+            const knowledgeBase = {
+                // Información sobre unirse a la agencia
+                'unirse|join|registrarme|aplicar|inscribirme|registro|ser parte|comenzar|iniciar|unirme': {
+                    es: `Para unirte a Nacar Agency, el proceso es simple:\n\n1️⃣ Completa nuestro formulario de registro en línea\n2️⃣ Descarga Bigo Live en tu dispositivo móvil\n3️⃣ Crea tu cuenta de Bigo Live\n4️⃣ Vincula tu cuenta con Nacar Agency enviando una captura de pantalla de tu cuenta donde se vea el BigoID\n5️⃣ Una vez enviado, espera nuestro mensaje en tu bandeja de entrada en tu cuenta de bigo y acepta nuestra invitacion\n6️⃣ ¡Comienza a transmitir y ganar dinero!\n\n¿Necesitas más detalles sobre algún paso?`
+                },
+                
+                // Información sobre pagos
+                'pago|ganar|dinero|salario|ingresos|cuanto|payment|earn|cobrar|tarifa|pagar|pagos|plata|retirar|banco': {
+                    es: `💰 Sistema de Pagos de Nacar Agency:\n\n📊 Ganancias basadas en:\n• Beans recibidos durante streams\n• Horas de transmisión\n• Engagement con tu audiencia\n\n💵 Requisitos para pago completo:\n✅ Mínimo 46 horas de transmisión al mes\n✅ Cumplir con tareas mensuales asignadas\n✅ Mantener cuenta en buen estado\n\n⚠️ Pagos parciales disponibles si no cumples el mínimo, pero a tasa reducida.\n\nLos pagos se procesan mensualmente vía PayPal o transferencia bancaria.`
+                },
+
+                // Requisitos mínimos
+                'requisitos|requirements|necesito|necesitar|condiciones|requerimientos': {
+                    es: `📋 Requisitos para ser parte de Nacar Agency:\n\n✅ Ser mayor de 18 años\n✅ Tener smartphone con buena cámara y conexión estable\n✅ Disponibilidad para transmitir regularmente\n✅ Actitud profesional y positiva\n✅ No estar vinculado a otra agencia de Bigo Live\n✅ Tener documentos de entidad perteneciente de unos de los siguientes paises(peru,mexico,venezuela,colombia,chile,ecuador,panama,republica dominicana, honduras,argentina, el salvador, guatemala, costa rica, uruguay, paraguay, cuba, nicaragua, bolivia, puerto rico, jamaica) \n\n🎯 Para pago completo mensual:\n• Mínimo 46 horas de stream\n• Completar tareas asignadas\n• Responder mensajes de la agencia\n• Participar en eventos promocionales\n\n¿Cumples con estos requisitos?`
+                },
+
+                // Proceso de streaming
+                'streaming|transmitir|stream|transmision|broadcast|como funciona|Hacer live|en vivos|vivo|transmito|live|emitir|directo': {
+                    es: `🎥 Proceso de Streaming en Bigo Live:\n\n1️⃣ Abre la app Bigo Live\n2️⃣ Toca el botón de transmisión en vivo con la imagen de la camara en la parte inferior de tu pantalla\n3️⃣ Configura tu stream (título, categoría, filtros, foto de portada que cumple requisitos de la plataforma)\n4️⃣ Escoge la opcion live y luego toca el boton de emitir en directo e interactúa con tu audiencia!\n\n💡 Tips para el éxito:\n• Transmite en horarios consistentes\n• Interactúa activamente con viewers\n• Usa buena iluminación\n• Contenido creativo y entretenido\n• Agradece los gifts recibidos\n\nCon Nacar Agency, recibes soporte y capacitación continua.`
+                },
+
+                // Horarios y flexibilidad
+                'horario|schedule|cuando|tiempo|hours|horas': {
+                    es: `⏰ Horarios y Flexibilidad:\n\nNacar Agency ofrece total flexibilidad en tus horarios de streaming. Tú decides cuándo transmitir.\n\n📅 Recomendaciones:\n• Establece un horario consistente para crear audiencia fiel\n• Transmite cuando tu audiencia objetivo esté activa\n• Cumple las 46 horas mensuales para pago completo\n\n🌟 Puedes distribuir tus horas como prefieras siempre y cuando tu live tenga una duracion minima de 30 minutos cada session:\n• Diario \n• Mañana, tarde o noche\n\nLa constancia y actitud es clave para el crecimiento.`
+                },
+
+                // Soporte de la agencia
+                'soporte|ayuda|support|help|asistencia|capacitacion': {
+                    es: `🤝 Soporte de Nacar Agency:\n\nComo miembro de nuestra agencia, recibes:\n\n✅ Gestor personal dedicado\n✅ Capacitación continua para mejorar streams\n✅ Estrategias de crecimiento de audiencia\n✅ Soporte técnico 24/7\n✅ Comunidad de streamers para networking\n✅ Acceso a eventos y promociones exclusivas\n✅ Asesoría sobre contenido creativo\n\nEstamos comprometidos con tu éxito. ¿Tienes alguna pregunta específica?`
+                },
+
+                // Bigo Live información
+                'bigo|que es bigo|app|aplicacion': {
+                    es: `📱 Sobre Bigo Live:\n\nBigo Live es una plataforma de streaming en vivo líder mundial donde puedes:\n\n🌟 Transmitir contenido en vivo\n💰 Ganar dinero con tu talento\n👥 Construir una comunidad global\n🎁 Recibir gifts virtuales de viewers\n🏆 Participar en competencias y eventos\n\nCon Nacar Agency, maximizas tus ganancias en Bigo Live con soporte profesional completo.\n\n¿Quieres saber cómo empezar?`
+                },
+
+                // Contacto
+                'contacto|contact|comunicar|hablar|email|whatsapp|telefono': {
+                    es: `📧 Contacta con Nacar Agency:\n\nPara más información o iniciar tu proceso de registro:\n\n📩 Email: reclutamiento@nacaragency.com\n📱 WhatsApp: +1 (954) 295-4278\n🌐 Web: www.nacaragency.com\n\n💬 También puedes continuar la conversación aquí. Estoy disponible para responder todas tus preguntas.\n\n¿Quieres que te ayude con algo más específico?`
+                },
+
+                // Saludos
+                'hola|hello|hi|hey|buenos|buenas': {
+                    es: `¡Hola! 👋 Bienvenido a Nacar Agency.\n\n¿Estás interesado en convertirte en streamer profesional en Bigo Live y generar ingresos? Estoy aquí para resolver todas tus dudas.\n\n¿Qué te gustaría saber?`
+                },
+
+                // Default/No entiendo
+                'default': {
+                    es: `Lo siento, no estoy seguro de entender tu pregunta. 🤔\n\nPuedo ayudarte con información sobre:\n\n• Cómo unirte a Nacar Agency\n• Sistema de pagos y requisitos\n• Proceso de streaming en Bigo Live\n• Horarios y flexibilidad\n• Soporte que ofrecemos\n\n¿Sobre cuál de estos temas te gustaría saber más?`
+                }
+            };
+
+            // Encontrar respuesta
+            function findResponse(userMessage) {
+                const normalizedMessage = userMessage.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+                
+                for (const [keywords, responses] of Object.entries(knowledgeBase)) {
+                    if (keywords === 'default') continue;
+                    
+                    const keywordList = keywords.split('|');
+                    if (keywordList.some(keyword => normalizedMessage.includes(keyword))) {
+                        return responses.es;
+                    }
+                }
+                
+                return knowledgeBase.default.es;
+            }
+
+            // Elementos DOM
+            const chatButton = document.getElementById('nacar-chat-button');
+            const chatWindow = document.getElementById('nacar-chat-window');
+            const chatClose = document.getElementById('nacar-chat-close');
+            const chatMessages = document.getElementById('nacar-chat-messages');
+            const chatInput = document.getElementById('nacar-chat-input');
+            const chatSend = document.getElementById('nacar-chat-send');
+            const typingIndicator = document.getElementById('nacar-typing-indicator');
+
+            // Toggle chat
+            chatButton.addEventListener('click', () => {
+                chatWindow.classList.add('active');
+                chatInput.focus();
+            });
+
+            chatClose.addEventListener('click', () => {
+                chatWindow.classList.remove('active');
+            });
+
+            // Agregar mensaje
+            function addMessage(text, sender) {
+                const messageDiv = document.createElement('div');
+                messageDiv.classList.add('nacar-message', sender);
+                
+                const contentDiv = document.createElement('div');
+                contentDiv.classList.add('nacar-message-content');
+                contentDiv.innerHTML = text.replace(/\n/g, '<br>');
+                
+                messageDiv.appendChild(contentDiv);
+                
+                const messagesContainer = document.getElementById('nacar-chat-messages');
+                messagesContainer.insertBefore(messageDiv, typingIndicator);
+                messagesContainer.scrollTop = messagesContainer.scrollHeight;
+            }
+
+            // Respuesta del bot
+            function botResponse(userMessage) {
+                typingIndicator.classList.add('active');
+                
+                setTimeout(() => {
+                    typingIndicator.classList.remove('active');
+                    const response = findResponse(userMessage);
+                    addMessage(response, 'bot');
+                }, 1000 + Math.random() * 1000);
+            }
+
+            // Enviar mensaje
+            function sendMessage() {
+                const message = chatInput.value.trim();
+                if (message === '') return;
+                
+                addMessage(message, 'user');
+                chatInput.value = '';
+                
+                botResponse(message);
+            }
+
+            chatSend.addEventListener('click', sendMessage);
+            chatInput.addEventListener('keypress', (e) => {
+                if (e.key === 'Enter') sendMessage();
+            });
+
+            // Quick replies
+            document.addEventListener('click', (e) => {
+                if (e.target.classList.contains('quick-reply-btn')) {
+                    const reply = e.target.getAttribute('data-reply');
+                    chatInput.value = reply;
+                    sendMessage();
+                }
+            });
+        })();
+    </script>
+</div>
+<!-- END NACAR CONNECT CHATBOT WIDGET -->
+</body>
+</html>
